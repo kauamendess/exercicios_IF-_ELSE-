@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercícios JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exercícios JavaScript</h1>
+
+      <!-- APOSENTADORIA -->
+      <div class="card">
+        <h2>Aposentadoria</h2>
+
+        <input type="number" id="idade" placeholder="Digite sua idade" />
+        <input
+          type="number"
+          id="tempo"
+          placeholder="Tempo de contribuição (anos)"
+        />
+
+        <button onclick="verificarAposentadoria()">Verificar</button>
+
+        <p id="resultadoAposentadoria"></p>
+      </div>
+
+      <!-- IMC -->
+      <div class="card">
+        <h2>Calculadora de IMC</h2>
+
+        <input
+          type="number"
+          id="altura"
+          step="0.01"
+          placeholder="Altura (ex: 1.75)"
+        />
+        <input type="number" id="peso" step="0.1" placeholder="Peso (kg)" />
+
+        <button onclick="calcularIMC()">Calcular</button>
+
+        <p id="resultadoIMC"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
